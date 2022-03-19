@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "BgChange",
+    "description": "Add a custom background to Google.com ",
+    "version": "1.0",
+    "icons": {
+        "16": "/Images/3761.png",
+        "48": "/Images/3761 copy.png",
+        "128": "/Images/3761 copy 2.png"
+    },
+    "page_action":{
+        "default_icon":{
+            "16": "/Images/Unknown.png",
+            "48": "/Images/Unknown copy.png",
+            "128": "/Images/Unknown copy 2.png"
+        }
+    },
+    "content_scripts":[{
+        "matches":["https://www.google.com/*"],
+        "css":["main.css"]
+
+    }]
+    
+}
